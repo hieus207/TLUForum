@@ -1,3 +1,4 @@
+<?php include('path.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,41 +9,15 @@
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@1,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Login</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html"><h1 class="logo-text"><span>Hieu</span>Tran</h1></a>
-        </div>
-
-        <i class="fa fa-bars menu-toggle"></i>
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <!--    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Login</a></li>
-                -->
-            <li>
-                <a href="#">
-                <i class="fa fa-user"></i>
-                Hieu Tran
-                <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
-                    </a>
-                <ul>
-                    <li><a href="#">DashBoard</a></li>
-                    <li><a href="#" class="logout">Logout</a></li>
-                </ul>
-
-            </li>
-        </ul>
-
-    </header>
+    
+    <?php include(ROOT_PATH . "/app/includes/header.php");?>
 
     <div class="auth-content">
-        <form action="login.html" method="post">
+        <form action="login.php" method="post">
             <h2 class="form-title">Login</h2>
             <div>
                 <label>Username</label>
@@ -58,7 +33,7 @@
                 <button type="submit" class="btn btn_submit" name="login-btn">Login</button>
             </div>
             </center>
-            <p>Or <a href="register.html">Register</a></p>
+            <p>Or <a href="<?php echo BASE_URL . '/register.php'?>">Register</a></p>
         </form>
     </div>
     <!-- script SLICKS   -->
@@ -67,6 +42,6 @@
     <!--ERROR _ RESP DISPLAY-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- CUSTOM    -->
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

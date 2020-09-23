@@ -1,3 +1,4 @@
+<?php include('path.php');?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,43 +10,15 @@
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@1,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Blog - HieuTran</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <h1 class="logo-text"><span>Hieu</span>Tran</h1>
-            </a>
-        </div>
+    
+    <!-- TODO:INCLUDES HEADER HERE -->
 
-        <i class="fa fa-bars menu-toggle"></i>
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="http://olala5.epizy.com/" target="_blank">TraNgo's Blog</a></li>
-            <li><a href="#">Service</a></li>
-            <!--    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Login</a></li>
-                -->
-            <li>
-                <a href="register.html">
-                    <i class="fa fa-user"></i>
-                    Hieu Tran
-                    <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
-                    </a>
-                <ul>
-                    <li><a href="admin/topics/index.html">DashBoard</a></li>
-                    <li><a href="#" class="logout">Logout</a></li>
-                </ul>
-
-            </li>
-        </ul>
-
-    </header>
-
+    <?php include(ROOT_PATH . "/app/includes/header.php");?>
 
     <!-- SLIDER   -->
     <div class="page-wrapper">
@@ -56,7 +29,7 @@
             <div class="post-wrapper">
 
                 <div class="post">
-                    <img src="image/img1.png" alt="Beautyful girl" class="slider-image">
+                    <img src="assets/image/img1.png" alt="Beautyful girl" class="slider-image">
                     <div class="post-info">
                         <h4><a href="single.html">Every day is the good day!</a></h4>
                         <i class="author">Hieu Tran</i>
@@ -66,7 +39,7 @@
                 </div>
 
                 <div class="post">
-                    <img src="image/imag2.jpg" alt="Beautyful girl" class="slider-image">
+                    <img src="assets/image/imag2.jpg" alt="Beautyful girl" class="slider-image">
                     <div class="post-info">
                         <h4><a href="single.html">Hello Guys</a></h4>
                         <i class="author">Hieu Tran</i>
@@ -76,7 +49,7 @@
                 </div>
 
                 <div class="post">
-                    <img src="image/img3.png" alt="Beautyful girl" class="slider-image">
+                    <img src="assets/image/img3.png" alt="Beautyful girl" class="slider-image">
                     <div class="post-info">
                         <h4><a href="single.html">Welcome to my Blog</a></h4>
                         <i class="author">Hieu Tran</i>
@@ -86,7 +59,7 @@
                 </div>
 
                 <div class="post">
-                    <img src="image/img4.png" alt="Beautyful girl" class="slider-image">
+                    <img src="assets/image/img4.png" alt="Beautyful girl" class="slider-image">
                     <div class="post-info">
                         <h4><a href="single.html">You're welcome</a></h4>
                         <i class="author">Hieu Tran</i>
@@ -96,7 +69,7 @@
                 </div>
 
                 <div class="post">
-                    <img src="image/img5.png" alt="Beautyful girl" class="slider-image">
+                    <img src="assets/image/img5.png" alt="Beautyful girl" class="slider-image">
                     <div class="post-info">
                         <h4><a href="single.html">Every day is the good day!</a></h4>
                         <i class="author">Hieu Tran</i>
@@ -118,7 +91,7 @@
                     <h1 class="recent-post-title">Recents Posts</h1>
 
                     <div class="post">
-                        <img src="image/img1.png" alt="" class="post-image">
+                        <img src="assets/image/img1.png" alt="" class="post-image">
                         <div class="post-preview">
                             <h2><a href="single.html">Welcome to my Blog</a></h2>
                             <i class="author">HieuTran</i>
@@ -130,7 +103,7 @@
                     </div>
 
                     <div class="post">
-                        <img src="image/imag2.jpg" alt="" class="post-image">
+                        <img src="assets/image/imag2.jpg" alt="" class="post-image">
                         <div class="post-preview">
                             <h2><a href="single.html">Every day is the good day!</a></h2>
                             <i class="author">HieuTran</i>
@@ -142,7 +115,7 @@
                     </div>
 
                     <div class="post">
-                        <img src="image/img3.png" alt="" class="post-image">
+                        <img src="assets/image/img3.png" alt="" class="post-image">
                         <div class="post-preview">
                             <h2><a href="single.html">Every day is the good day!</a></h2>
                             <i class="author">HieuTran</i>
@@ -154,7 +127,7 @@
                     </div>
 
                     <div class="post">
-                        <img src="image/img4.png" alt="" class="post-image">
+                        <img src="assets/image/img4.png" alt="" class="post-image">
                         <div class="post-preview">
                             <h2><a href="single.html">Beautyful Girl</a></h2>
                             <i class="author">HieuTran</i>
@@ -197,51 +170,8 @@
     
 
     <!--Footer-->
-    <div class="footer">
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h1 class="logo-text"><span>Hieu</span>Tran</h1>
-                <p>Student in class 60PM2, Thuy Loi University. <br>
-                    However, Hieu Tran is handsome.
-                </p>
-                <div class="contact">
-                    <span>Phone Number:&nbsp;123-456-789</span>
-                </div>
-                <div class="socials">
-                    <a href="https://facebook.com/hieus207">Facebook</a>
 
-                    <a href="https://twitter.com/hieus207">Twitter</a>
-                </div>
-            </div>
-
-
-            <div class="footer-section links">
-                <h2>Quick link</h2>
-                <br>
-                <ul>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Galerry</a></li>
-                    <li><a href="#">Term and Condition</a></li>
-                    <li><a href="#">Events</a></li>
-                </ul>
-            </div>
-            <div class="footer-section contact-form">
-                <h2>Contact us</h2>
-                <br>
-                <form action="index.html" method="post">
-                    <input type="email" name="email" class="text-input contact-input"
-                        placeholder="Your email address...">
-                    <textarea name="message" class="text-input contact-input" rows="4"
-                        placeholder="Your message... "></textarea>
-                    <button type="submit" class="btn btn_submit">Send</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            &copy; 60PM2 |Design by Trinh Hieu |Reference: Awa Melvine
-        </div>
-    </div>
+    <?php include(ROOT_PATH . "/app/includes/footer.php");?>
 
     <!--END-Footer-->
 
@@ -254,7 +184,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- CUSTOM    -->
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 
 </html>
+
+
